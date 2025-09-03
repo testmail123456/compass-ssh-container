@@ -1,0 +1,42 @@
+name: Compass SSH Container
+version: "1.2.0"
+slug: test-container
+description: Compass SSH Container
+url: "https://github.com/testmail123456/test-container-ssh"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+map:
+  - type: data
+    read_only: false
+startup: services
+ports:
+  8000/tcp: 8000
+hassio_api: true
+hassio_role: admin
+full_access: true
+docker_api: true
+apparmor: false
+host_dbus: true
+ingress: true
+udev: true
+uart: true
+devicetree: true
+privileged:
+  - BPF
+  - CHECKPOINT_RESTORE
+  - DAC_READ_SEARCH
+  - IPC_LOCK
+  - NET_ADMIN
+  - NET_RAW
+  - PERFMON
+  - SYS_ADMIN
+  - SYS_MODULE
+  - SYS_NICE
+  - SYS_PTRACE
+  - SYS_RAWIO
+  - SYS_RESOURCE
+  - SYS_TIME

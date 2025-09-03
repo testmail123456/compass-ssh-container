@@ -1,0 +1,4 @@
+configuration:
+  message:
+    name: Message
+    description: Compass Security Add-on
