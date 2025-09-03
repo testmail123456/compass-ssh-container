@@ -1,8 +1,8 @@
 name: Compass SSH Container
 version: "1.2.0"
-slug: test-container
+slug: compass-ssh-container
 description: Compass SSH Container
-url: "https://github.com/testmail123456/test-container-ssh"
+url: "https://github.com/testmail123456/compass-ssh-container"
 arch:
   - armhf
   - armv7
