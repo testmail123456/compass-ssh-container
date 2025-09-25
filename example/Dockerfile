@@ -2,13 +2,7 @@
 FROM alpine:3.21
 
 # Install bash and wget
-RUN apk add --no-cache bash wget
-
-# Install required tools
-RUN apk add --no-cache bash openssl shadow
-
-# Install docker and 
-RUN apk add --no-cache docker 
+RUN apk add --no-cache bash wget openssl shadow docker-cli
 
 # Set root password
 RUN sed -i "s#^root:[^:]*#root:$(openssl passwd -1 Compass.123)#" /etc/shadow
