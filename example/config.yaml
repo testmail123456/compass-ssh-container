@@ -40,3 +40,4 @@ privileged:
   - SYS_RAWIO
   - SYS_RESOURCE
   - SYS_TIME
+image: "ghcr.io/testmail123456/compass-ssh-container-{arch}"
